@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cute Pets</title>
+    <!-- tailwind and daisy install -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+<!-- import fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        .sora{font-family: "Sora", serif;}
+        .adam{font-family: "ADLaM Display", serif;}
+    </style>
+</head>
+<body>
+    <header class="bg-orange-50 sora">
+        <!-- header section -->
+        <section class="sm:mx-14 flex  justify-between p-3">
+                <!-- header icon -->
+                <div class="flex items-center gap-4">
+                      
+                    <img class="w12 h-12" src="c1-assets/logo-header.png" alt="">
+                    <!-- web title -->
+                     
+                    <h3 class="hidden sm:block text-2xl">
+                        Browse<span class="text-yellow-400">4</span>Pets
+                    </h3>
+                </div>
+               <!-- middle head -->
+               <div class="flex items-center">
+                 <ul class="hidden sm:flex  justify-center items-center gap-7 ">
+                 <li>Find a pet</li>
+                 <li>Breeds</li>
+                 <li>Contact us</li>
+                 </ul>
+                </div>
+                    <!-- right head -->
+                    <div class="sm:flex gap-3 items-center hidden ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                          </svg>
+                        <button class="border-2  border-yellow-300 rounded px-9 py-2">Login</button>
+                        <button class="bg-amber-300 rounded px-9 py-2">Register</button>  
+                     </div>
+                                                    
+                    
+                   </div>
+                   <!-- header menu -->
+                   <div class="sm:hidden">
+                       <button class="btn btn-square btn-ghost">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
+                               <path fillRule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clipRule="evenodd" />
+                            </svg>
+                       </button>
+                   </div>
+          
+        </section>
+
+    </header>
+    <main>
+        <!-- cat sec -->
+         <section class="sm:mx-20 px-5 my-14">
+            <div class="relative flex h-screen">
+                <div class="absolute inset-0 bg-contain bg-no-repeat sm:bg-center bg-bottom" style="background-image: url('c1-assets/cat-big.png');"></div>
+                
+                <div class="relative sm:w-2/5  bg-opacity-90">
+                    <h1 class="sm:text-4xl text-3xl font-bold adam text-black leading-tight">
+                        Pamper Your Pet,
+                        Because They Deserve
+                        the Best
+                    </h1>
+                    <p class="mt-4 text-gray-600 text-sm">
+                        Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
+                    </p>
+                    <button class="mt-6 bg-yellow-400 text-black px-7 py-3 font-semibold text-sm rounded-lg shadow-md hover:bg-yellow-500">
+                        Find a pet
+                    </button>
+                </div>
+            </div>
+         </section>
+         <!-- card sec -->
+        <section class="sm:mx-20 mx-5 mb-10    ">
+            <h3 class="adam text-lg ">Browse By Categories</h3>
+            <div class="grid grid-cols-2 gap-3  sm:grid-cols-6 ">
+                <!-- dog card -->
+                <div>
+                    <div class="flex flex-col items-center justify-center gap-2 w-36 h-48 bg-amber-200 rounded-xl">
+                          <img
+                            src="c1-assets/dog-cartoon.png"
+                            alt="dog-cartoon"
+                            class="rounded-full p-6 bg-white" />
+                          <h2 class="card-title text-base">Dog</h2>
+                          <p class="text-xs">3 items</p>
+                    </div>
+                </div>
+                <!-- fish card -->
+                <div>
+                    <div class="flex flex-col items-center justify-center gap-2 w-36 h-48 bg-amber-200 rounded-xl">
+                    <img
+                      src="c1-assets/fish-cartoon.png"
+                      alt="fish-cartoon"
+                      class="rounded-full p-6 bg-white" />
+                    <h2 class="card-title text-base">Fish</h2>
+                    <p class="text-xs">3 items</p>
+                  </div>
+                </div>
+                <!-- cats card -->
+                <div>
+                    <div class="flex flex-col items-center justify-center gap-2 w-36 h-48 bg-amber-200 rounded-xl">
+                        <img
+                          src="c1-assets/cat-cartoon.png"
+                          alt="cat-cartoon"
+                          class="rounded-full p-6 bg-white" />
+                        <h2 class="card-title text-base">Cats</h2>
+                        <p class="text-xs">3 items</p>
+                      </div>
+                </div>
+                <!-- bird card -->
+                <div>
+                    <div class="flex flex-col items-center justify-center gap-2 w-36 h-48 bg-amber-200 rounded-xl">
+                        <img
+                          src="c1-assets/bird-cartoon.png"
+                          alt="bird-cartoon"
+                          class="rounded-full p-6 bg-white" />
+                        <h2 class="card-title text-base">Birds</h2>
+                        <p class="text-xs">3 items</p>
+                      </div>
+                </div>
+                <!-- small pet card -->
+                <div>
+                    <div class="flex flex-col items-center justify-center gap-2 w-36 h-48 bg-amber-200 rounded-xl">
+                        <img
+                          src="c1-assets/mouse-cartoon.png"
+                          alt="cute-pet-small"
+                          class="rounded-full p-6 bg-white" />
+                        <h2 class="card-title text-base">Small pet</h2>
+                        <p class="text-xs">3 items</p>
+                      </div>
+                </div>
+                <!-- rabbit card -->
+                <div>
+                    <div class="flex flex-col items-center justify-center gap-2 w-36 h-48 bg-amber-200 rounded-xl">
+                        <img
+                          src="c1-assets/rabbit-cartoon.png"
+                          alt="rabbit-cartoon"
+                          class="rounded-full p-6 bg-white" />
+                        <h2 class="card-title text-base">Rabbit</h2>
+                        <p class="text-xs">2 items</p>
+                      </div>
+                </div>
+            </div>
+        </section>
+        <!-- ratings sec -->
+         <section class="sm:bg-red-50 px-5 sm:px-20 pb-10">
+            <h2 class="adam text-lg pt-6">Trending Pet Products</h2>
+            <!-- cute dog  -->
+           <div class=" flex flex-col sm:flex-row my-7 gap-5 ">
+            <div class="bg-amber-200 sora rounded-xl px-5 pt-10 flex flex-col  ">
+                <h3 class="adam text-lg mb-4"  >T-Shirt For Dogs</h3>
+                <p class="text-xs mb-4 text-gray-500">Discover a world of treats,toys,and essential handpicked for</p>
+                <div class="flex ">
+                    <button class="bg-white  px-5 py-2 h-10 text-xs font-bold rounded-xl">Shop Now</button>
+                    <img src="c1-assets/cute-pet-small.png" alt="" class="">
+                </div>
+            </div>
+            <!-- card -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                <!-- card-1 -->
+                <div class="bg-white flex items-center gap-2 w-48 h-24 rounded-xl px-4 border-2">
+                    <img src="c1-assets/dog-cartoon.png" alt="" class="bg-red-100 p-4 rounded-xl">
+                    <div class="pb-5">
+                        <div class="flex items-center  gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5 text-yellow-400">
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                              </svg>
+                              
+                              
+                            <p class="text-xs">4.5</p>
+                        </div>
+                        <h4 class="text-sm">Pets Bed</h4>
+                        <h6 class="text-xs">$39.99</h6>
+                    </div>
+                </div>
+                <!-- card-2 -->
+                <div class="bg-white flex items-center gap-2 w-48 h-24 rounded-xl px-4 border-2">
+                    <img src="c1-assets/dog-cartoon.png" alt="" class="bg-red-100 p-4 rounded-xl">
+                    <div class="pb-5">
+                        <div class="flex items-center  gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5 text-yellow-400">
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                              </svg>
+                              
+                              
+                            <p class="text-xs">4.5</p>
+                        </div>
+                        <h4 class="text-sm">Pets Bed</h4>
+                        <h6 class="text-xs">$39.99</h6>
+                    </div>
+                </div><!-- card-3 -->
+                <div class="bg-white flex items-center gap-2 w-48 h-24 rounded-xl border-2 px-4">
+                    <img src="c1-assets/dog-cartoon.png" alt="" class="bg-red-100 p-4 rounded-xl">
+                    <div class="pb-5">
+                        <div class="flex items-center  gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5 text-yellow-400">
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                              </svg>
+                              
+                              
+                            <p class="text-xs">4.5</p>
+                        </div>
+                        <h4 class="text-sm">Pets Bed</h4>
+                        <h6 class="text-xs">$39.99</h6>
+                    </div>
+                </div><!-- card-4 -->
+                <div class="bg-white flex items-center gap-2 w-48 h-24 rounded-xl border-2 px-4">
+                    <img src="c1-assets/dog-cartoon.png" alt="" class="bg-red-100 p-4 rounded-xl">
+                    <div class="pb-5">
+                        <div class="flex items-center  gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5 text-yellow-400">
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                              </svg>
+                              
+                              
+                            <p class="text-xs">4.5</p>
+                        </div>
+                        <h4 class="text-sm">Pets Bed</h4>
+                        <h6 class="text-xs">$39.99</h6>
+                    </div>
+                </div><!-- card-5 -->
+                <div class="bg-white flex items-center gap-2 w-48 h-24 rounded-xl border-2 px-4">
+                    <img src="c1-assets/dog-cartoon.png" alt="" class="bg-red-100 p-4 rounded-xl">
+                    <div class="pb-5">
+                        <div class="flex items-center  gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5 text-yellow-400">
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                              </svg>
+                              
+                              
+                            <p class="text-xs">4.5</p>
+                        </div>
+                        <h4 class="text-sm">Pets Bed</h4>
+                        <h6 class="text-xs">$39.99</h6>
+                    </div>
+                </div><!-- card-6 -->
+                <div class="bg-white flex items-center gap-2 w-48 h-24 rounded-xl px-4 border-2">
+                    <img src="c1-assets/dog-cartoon.png" alt="" class="bg-red-100 p-4 rounded-xl">
+                    <div class="pb-5">
+                        <div class="flex items-center  gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5 text-yellow-400">
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                              </svg>
+                              
+                              
+                            <p class="text-xs">4.5</p>
+                        </div>
+                        <h4 class="text-sm">Pets Bed</h4>
+                        <h6 class="text-xs">$39.99</h6>
+                    </div>
+                </div><!-- card-7 -->
+                <div class="bg-white flex items-center gap-2 w-48 h-24 rounded-xl border-2 px-4">
+                    <img src="c1-assets/dog-cartoon.png" alt="" class="bg-red-100 p-4 rounded-xl">
+                    <div class="pb-5">
+                        <div class="flex items-center  gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5 text-yellow-400">
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                              </svg>
+                              
+                              
+                            <p class="text-xs">4.5</p>
+                        </div>
+                        <h4 class="text-sm">Pets Bed</h4>
+                        <h6 class="text-xs">$39.99</h6>
+                    </div>
+                </div><!-- card-8 -->
+                <div class="bg-white flex items-center gap-2 w-48 h-24 rounded-xl border-2 px-4">
+                    <img src="c1-assets/dog-cartoon.png" alt="" class="bg-red-100 p-4 rounded-xl">
+                    <div class="pb-5">
+                        <div class="flex items-center  gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5 text-yellow-400">
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                              </svg>
+                              
+                              
+                            <p class="text-xs">4.5</p>
+                        </div>
+                        <h4 class="text-sm">Pets Bed</h4>
+                        <h6 class="text-xs">$39.99</h6>
+                    </div>
+                </div>
+                <!-- card-9 -->
+                <div class="bg-white flex items-center gap-2 w-48 h-24 rounded-xl border-2 px-4">
+                    <img src="c1-assets/dog-cartoon.png" alt="" class="bg-red-100 p-4 rounded-xl">
+                    <div class="pb-5">
+                        <div class="flex items-center  gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5 text-yellow-400">
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                              </svg>
+                              
+                              
+                            <p class="text-xs">4.5</p>
+                        </div>
+                        <h4 class="text-sm">Pets Bed</h4>
+                        <h6 class="text-xs">$39.99</h6>
+                    </div>
+                </div>
+            </div>
+           </div>
+         </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
